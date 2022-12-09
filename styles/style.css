@@ -238,7 +238,7 @@ START main */
   font-weight: normal;
   z-index: 2;
   text-decoration: none;
-  color:#2f80ed
+  color:#2f80ed;
 }
 
 .feynman__main-illustration {
@@ -387,7 +387,6 @@ START footer*/
 }
 
 .footer__column-link {
-  FONT-WEIGHT: 100;
   color: white;
   text-decoration: none;
   margin: 0;
