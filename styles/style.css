@@ -1,3 +1,5 @@
+/* Спасибо за быстрый и подробный ревью! */
+
 
 .page {
   min-width: 1100px;
@@ -20,14 +22,14 @@
   min-height: 600px;
   max-height: 756px;
   display: flex;
+  flex-direction: column;
+  justify-content:center;
   position: relative;
-  overflow: hidden; /* */
+  overflow: hidden;
 }
 
 .header__title {
   width: 730px;
-  margin-top: auto;
-  margin-bottom: auto;
   margin-left: 64px;
   z-index: 3;
   font-size: 102px;
@@ -40,6 +42,7 @@
   bottom: 30px;
   left: 64px;
   width: 388px;
+  z-index: 3;
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
@@ -56,6 +59,7 @@
   right: 0;
   width: 765px;
   height: 608px;
+  object-fit: cover;
   z-index: 2;
 }
 
@@ -136,10 +140,11 @@ START main */
   padding: 100px 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .section-title {
-  margin: 0 auto 20px;
+  margin: 0 0 20px;
   padding: 0;
   width: 60%;
   text-align: center;
@@ -150,7 +155,7 @@ START main */
 }
 
 .section-subtitle {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   width: 60%;
   text-align: center;
@@ -163,7 +168,8 @@ START main */
 .table {
   box-sizing: border-box;
   width: 1100px;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -172,7 +178,9 @@ START main */
 
 .table__cell {
   width: 250px;
-  margin-top: 60px;
+  margin: 60px 0 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .table__heading {
@@ -203,7 +211,7 @@ START main */
   align-items: center;
   padding-top: 100px;
   position: relative;
-  height: 890px;
+  min-height: 890px;
   box-sizing: border-box;
 }
 
@@ -259,41 +267,22 @@ START main */
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: relative;
+
 }
 
 .section-title_theme_dark {
-  margin: 0 auto 20px;
-  padding: 0;
-  width: 60%;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
   color: white;
   z-index: 3;
 }
 
 .section-subtitle_theme_dark {
-  margin: 0 auto;
-  padding: 0;
-  width: 60%;
-  text-align: center;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
   color: white;
   z-index: 3;
 }
 
 .table_theme_dark {
-  box-sizing: border-box;
-  width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
   z-index: 3;
 }
 
@@ -303,24 +292,16 @@ START main */
 }
 
 .table__heading_theme_dark {
-  margin: 0;
-  padding: 0;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
   color: white;
 }
 
 .table__text_theme_dark {
-  padding: 0;
-  margin: 20px 0 0;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
   color: white;
 }
 
 .kaufman__triangle {
+  background-image: url('../images/kaufman-triangle.svg');
+  background-size: cover;
   position: absolute;
   right: -210px;
   top: 0;
@@ -341,19 +322,22 @@ START footer*/
   justify-content: center;
 }
 
-.footer__colums {
+.footer__columns {
   width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.footer__column_content_copyright {
-  flex-basis: 711px;
+.footer__column {
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
   align-items:flex-start;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  justify-content:space-between;
 }
 
 .footer__author {
@@ -363,12 +347,6 @@ START footer*/
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-}
-
-.footer__column_content_info {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
 }
 
 .footer__column-heading {
@@ -394,12 +372,6 @@ START footer*/
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-}
-
-.footer__column_content_social {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
 }
 
 .footer__social-icon {
