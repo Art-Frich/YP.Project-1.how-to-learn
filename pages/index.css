@@ -14,6 +14,7 @@
 @import url(../blocks/header/__main-illustration/header__main-illustration.css);
 @import url(../blocks/header/__square-pic/header__square-pic.css);
 
+
 /* Стили раздела main */
 @import url(../blocks/content/content.css);
 
@@ -69,8 +70,6 @@
 @import url(../blocks/khan/__book-pic/khan__book-pic.css);
 @import url(../blocks/khan/__buy-link/khan__buy-link.css);
 
-
-
 /* Стили секции kaufman, построенной на основе секции digits (основные стили те же, импортированы только дополнительные */
 @import url(../blocks/kaufman/kaufman.css);
 @import url(../blocks/section-title/_theme/section-title_theme_dark.css);
@@ -83,6 +82,9 @@
 
 /* Стили секции resourses */
 @import url(../blocks/resources/resources.css);
+@import url(../blocks/resources/__logo-zone/resources__logo-zone.css);
+@import url(../blocks/resources/__link/resources__link.css);
+@import url(../blocks/resources/__logo/resources__logo.css);
 
 
 /* Стили раздела footer */
