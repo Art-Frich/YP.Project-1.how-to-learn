@@ -1,4 +1,3 @@
-<!-- test -->
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -9,7 +8,7 @@
     <title>Научиться учиться</title>
   </head>
 
-  <body class="root">
+  <body class="page">
     <header class="header">
       <img
         class="logo logo_place_header"
@@ -29,7 +28,7 @@
         src="./images/two_again.png"
         alt="Картина, известная как: снова двойка"
       />
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic rotation"></div>
     </header>
 
     <main class="content">
@@ -55,6 +54,110 @@
             </p>
           </div>
         </div>
+      </section>
+
+      <section class="techniques">
+        <h2 class="section-title">Техники обучения</h2>
+        <h3 class="section-subtitle">Пять практик от Барбары Оакли</h3>
+        <ul class="cards">
+          <li class="cards__item">
+            <img
+              src="./images/cards-attention.png"
+              alt="Книга под названиям 101 эссе, которые изменят ваше мышление"
+              class="cards__image"
+            />
+            <h4 class="cards__title">Два вида внимания</h4>
+            <p class="cards__description">
+              Глубокие знания возникают, если чередовать сфокусированное и
+              рассеянное мышление.
+            </p>
+          </li>
+          <li class="cards__item">
+            <img
+              src="./images/cards-recall.png"
+              alt="Изображение статуи мальчика-мыслителя"
+              class="cards__image"
+            />
+            <h4 class="cards__title">Recall</h4>
+            <p class="cards__description">
+              Вспоминайте изученное &mdash; это позволяет соединить разрозненные
+              порции памяти.
+            </p>
+          </li>
+          <li class="cards__item">
+            <img
+              src="./images/cards-interliving.png"
+              alt="Черно-белое изображение с фокусом в центре, некой закрытой площади некоего крупного здания изнутри"
+              class="cards__image"
+            />
+            <h4 class="cards__title">Интерливинг</h4>
+            <p class="cards__description">
+              Изучайте несколько навыков одновременно, они обогащают друг друга
+            </p>
+          </li>
+          <li class="cards__item">
+            <img
+              src="./images/cards-question.png"
+              alt="Мужчина во внутреннем дворе большого помещения. Много белого. Много окон."
+              class="cards__image"
+            />
+            <h4 class="cards__title">Вопросы</h4>
+            <p class="cards__description">
+              Слушая преподавателя, придумывайте хороший вопрос, который вас
+              действительно волнует.
+            </p>
+          </li>
+          <li class="cards__item">
+            <img
+              src="./images/cards-competence.png"
+              alt="Изображение руки, на которой расположена стопка книг"
+              class="cards__image"
+            />
+            <h4 class="cards__title">Иллюзия компетентности</h4>
+            <p class="cards__description">
+              Повторите про себя, запишите, расскажите другу: вам только
+              кажется, что вы владеете новой темой.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="video">
+        <h2 class="section-title">Видео на TED</h2>
+        <h3 class="section-subtitle">Для тех, кто любит прокрастинировать</h3>
+        <div class="video__iframes">
+          <iframe
+            class="video__iframe"
+            src="https://www.youtube.com/embed/arj7oStGLkU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            class="video__iframe"
+            src="https://www.youtube.com/embed/5MgBikgcWnY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="oakley"></section>
+
+      <section class="feynman">
+        <h2 class="feynman__title">Метод Фейнмана</h2>
+        <h3 class="feynman__subtitle">Выучить и не забыть.</h3>
+
+        <a href="" class="feynman__link">Подробнее &rarr;</a>
+
+        <img
+          class="feynman__main-illustration"
+          src="./images/feynman.png"
+          alt="Картинка-портрет Фейнмана"
+        />
       </section>
 
       <section class="digits">
@@ -114,18 +217,7 @@
         </ul>
       </section>
 
-      <section class="feynman">
-        <h2 class="feynman__title">Метод Фейнмана</h2>
-        <h3 class="feynman__subtitle">Выучить и не забыть.</h3>
-
-        <a href="" class="feynman__link">Подробнее &rarr;</a>
-
-        <img
-          class="feynman__main-illustration"
-          src="./images/feynman.png"
-          alt="Картинка-портрет Фейнмана"
-        />
-      </section>
+      <section class="khan"></section>
 
       <section class="kaufman">
         <h2 class="section-title section-title_theme_dark">
@@ -209,6 +301,8 @@
 
         <div class="kaufman__triangle"></div>
       </section>
+
+      <section class="resources"></section>
     </main>
 
     <footer class="footer">
