@@ -6,7 +6,3 @@
   margin: 0;
   padding: 0;
 }
-
-.two-columns__paragraph:not(:first-child) {
-  margin-top: 30px;
-}
